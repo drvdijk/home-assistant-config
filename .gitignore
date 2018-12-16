@@ -1,0 +1,15 @@
+# Ignoring file types
+*.log
+*.db
+*.db-shm
+*.db-wal
+*.pyc
+
+# Ignoring directories
+config/.cloud
+config/.storage
+config/deps
+
+# Ignore specific files
+config/.uuid
+config/secrets.yaml
