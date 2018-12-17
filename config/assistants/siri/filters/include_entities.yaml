@@ -1,0 +1,13 @@
+---
+# Provides a list of entities to include in HomeKit.
+#
+# https://www.home-assistant.io/components/homekit/#include_entities
+#
+include_entities:
+  - light.keuken_level
+  - light.eettafel_level
+  - light.huiskamer_level
+  - light.slaapkamer_level
+  - light.kinderkamer_level
+  - light.hal
+  - light.overloop

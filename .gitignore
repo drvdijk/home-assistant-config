@@ -16,3 +16,5 @@ config/options.xml
 config/OZW_Log.txt
 config/pyozw.sqlite
 config/secrets.yaml
+
+config/\.homekit\.state
