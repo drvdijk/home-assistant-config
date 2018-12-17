@@ -1,0 +1,5 @@
+---
+# Convert a zwave switch into a light
+platform: switch
+name: Overloop
+entity_id: switch.overloop_switch
