@@ -1,0 +1,10 @@
+---
+# Cloudflare component to keep the DNS record pointing at the right place
+#
+# https://www.home-assistant.io/components/cloudflare
+cloudflare:
+  email: !secret cloudflare_email
+  api_key: !secret cloudflare_api_key
+  zone: !secret cloudflare_zone
+  records:
+    - spiegell
