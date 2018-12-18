@@ -1,0 +1,5 @@
+---
+# Convert a zwave switch into a light
+platform: switch
+name: Kerstboom
+entity_id: switch.kerstboom
