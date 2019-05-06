@@ -11,5 +11,3 @@ include_entities:
   - light.kinderkamer_level
   - light.hal
   - light.overloop
-  - switch.tv_stopcontact
-  - switch.studeer_stopcontact
