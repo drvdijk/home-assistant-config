@@ -1,0 +1,10 @@
+---
+# Turn overloop night light (switch) on at sunset
+alias: Turn overloop night light on at sunset
+trigger:
+- platform: sun
+  event: sunset
+action:
+- data:
+    entity_id: switch.overloop_switch_2
+  service: switch.turn_on

@@ -1,0 +1,10 @@
+---
+# Turn overloop night light (switch) off at sunrise
+alias: Turn overloop night light off at sunrise
+trigger:
+- platform: sun
+  event: sunrise
+action:
+- data:
+    entity_id: switch.overloop_switch_2
+  service: switch.turn_off

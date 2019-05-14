@@ -32,3 +32,6 @@ zwave:
     # Ignoring the second sets of controls and sensors that I don't use
     "*2":
       ignored: true
+    # But I'll use the second switch of the overloop
+    "switch.overloop_switch_2":
+      ignored: false
