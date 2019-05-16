@@ -11,8 +11,8 @@ homekit:
 
   name: Spiegell
 
-  # Filters for entities to be included / excluded from HomeKit.
-  filter: !include_dir_merge_named ../../assistants/siri/filters
+  # Filter for entities to be included / excluded from HomeKit.
+  filter: !include ../../assistants/siri/include_entities.yaml
 
   # Configuration for specific entities. Allows customization of names and types
-  entity_config: !include_dir_merge_named ../../assistant/siri/entities
+  entity_config: !include_dir_merge_named ../../assistants/siri/entity_configs
