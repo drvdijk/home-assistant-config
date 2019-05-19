@@ -1,0 +1,26 @@
+---
+# Automation for the night light on the landing
+#
+# The outlet for the night light on the landing is right next
+# to the switch that controls the main light on the landing.
+# That switch is a double zwave switch, ie it can control two
+# entities. There is only one button though.
+#
+# This automation makes it so that during the day, when the
+# main light is off, the power outlet (the night light) is off
+# too.
+alias: Night light outlet during daytime
+trigger:
+- platform: state
+  entity_id: switch.overloop_switch
+condition:
+  condition: and # default
+  conditions:
+    - condition: sun
+      after: sunrise
+    - condition: sun
+      before: sunset
+action:
+- data:
+    entity_id: switch.overloop_switch_2
+  service_template: switch.turn_{{ trigger.to_state.state }}
