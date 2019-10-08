@@ -1,0 +1,8 @@
+---
+# Dutch Smart Meter Reader integration. Reads power and gas statistics
+#
+# https://www.home-assistant.io/integrations/dsmr
+platform: dsmr
+host: !secret dsmr_host
+port: !secret dsmr_port
+dsmr_version: 5

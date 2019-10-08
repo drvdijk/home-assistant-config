@@ -1,0 +1,16 @@
+---
+# yr.no integration. Keeps track of the weather
+#
+# https://www.home-assistant.io/integrations/yr
+
+platform: yr
+monitored_conditions:
+  - temperature
+  - humidity
+  - fog
+  - pressure
+  - precipitation
+  - dewpointTemperature
+  - windSpeed
+  - windDirection
+  

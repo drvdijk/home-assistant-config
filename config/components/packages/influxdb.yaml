@@ -1,0 +1,29 @@
+---
+# InfluxDB to store (some) sensor data
+#
+# https://www.home-assistant.io/integrations/influxdb
+influxdb:
+  host: !secret influxdb_host
+  port: !secret influxdb_port
+  username: !secret influxdb_username
+  password: !secret influxdb_password
+  database: !secret influxdb_database
+  include:
+    entities:
+      - sensor.gas_consumption
+      - sensor.hourly_gas_consumption
+      - sensor.power_production
+      - sensor.power_production_low
+      - sensor.power_production_normal
+      - sensor.power_consumption
+      - sensor.power_consumption_low
+      - sensor.power_consumption_normal
+      - sensor.power_tariff
+      - sensor.yr_temperature
+      - sensor.yr_humidity
+      - sensor.yr_fog
+      - sensor.yr_pressure
+      - sensor.yr_precipitation
+      - sensor.yr_dewpointTemperature
+      - sensor.yr_windSpeed
+      - sensor.yr_windDirection
