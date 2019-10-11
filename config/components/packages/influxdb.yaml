@@ -27,3 +27,16 @@ influxdb:
       - sensor.yr_dewpointTemperature
       - sensor.yr_windSpeed
       - sensor.yr_windDirection
+      - sendor.yr_lowClouds
+      - sensor.yr_mediumClouds
+      - sensor.yr_highClouds      
+      - sensor.badkamer_tado_temperature
+      - sensor.badkamer_tado_humidity
+      - sensor.beneden_tado_temperature
+      - sensor.beneden_tado_humidity
+      - sensor.kinderkamer_tado_temperature
+      - sensor.kinderkamer_tado_humidity
+      - sensor.slaapkamer_tado_temperature
+      - sensor.slaapkamer_tado_humidity
+      - sensor.zolder_tado_temperature
+      - sensor.zolder_tado_humidity

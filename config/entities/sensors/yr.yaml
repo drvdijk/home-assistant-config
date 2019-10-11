@@ -13,4 +13,7 @@ monitored_conditions:
   - dewpointTemperature
   - windSpeed
   - windDirection
-  
+  - cloudiness
+  - lowClouds
+  - mediumClouds
+  - highClouds
