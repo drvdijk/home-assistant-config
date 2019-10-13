@@ -25,11 +25,12 @@ influxdb:
       - sensor.yr_pressure
       - sensor.yr_precipitation
       - sensor.yr_dewpointTemperature
-      - sensor.yr_windSpeed
-      - sensor.yr_windDirection
-      - sendor.yr_lowClouds
-      - sensor.yr_mediumClouds
-      - sensor.yr_highClouds      
+      - sensor.yr_wind_speed
+      - sensor.yr_wind_direction
+      - sensor.yr_cloudiness
+      - sensor.yr_low_clouds
+      - sensor.yr_medium_clouds
+      - sensor.yr_high_clouds
       - sensor.badkamer_tado_temperature
       - sensor.badkamer_tado_humidity
       - sensor.beneden_tado_temperature
