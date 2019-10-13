@@ -1,0 +1,5 @@
+---
+"sensor.*_l2":
+  hidden: true
+"sensor.*_l3":
+  hidden: true
