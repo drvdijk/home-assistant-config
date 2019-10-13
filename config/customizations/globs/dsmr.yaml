@@ -1,5 +1,3 @@
 ---
-"sensor.*_l2":
-  hidden: true
-"sensor.*_l3":
+"sensor.*_l[123]":
   hidden: true

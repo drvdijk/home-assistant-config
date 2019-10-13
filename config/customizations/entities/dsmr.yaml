@@ -5,3 +5,5 @@ sensor.voltage_swells_phase_l1:
   hidden: true
 sensor.power_consumption_total:
   hidden: true
+sensor.long_power_failure_count:
+  hidden: true
