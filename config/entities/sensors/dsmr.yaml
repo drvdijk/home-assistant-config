@@ -3,6 +3,5 @@
 #
 # https://www.home-assistant.io/integrations/dsmr
 platform: dsmr
-host: !secret dsmr_host
-port: !secret dsmr_port
+port: /dev/ttyUSB0
 dsmr_version: 5
