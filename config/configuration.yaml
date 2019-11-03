@@ -26,4 +26,4 @@ homeassistant:
   time_zone: Europe/Amsterdam
 
   # Packages
-  packages: !include_dir_named components/packages
+  packages: !include_dir_named integrations
