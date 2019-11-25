@@ -12,6 +12,10 @@ homeassistant:
   # Name of this Home Assistant
   name: spiegell
 
+  # MFA setup, using TOTP
+  auth_mfa_modules:
+    - type: totp
+
   # Location required to calculate the time the sun rises and sets
   latitude: !secret latitude
   longitude: !secret longitude
