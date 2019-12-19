@@ -1,0 +1,5 @@
+---
+# Convert a zwave switch into a light
+platform: switch
+name: Globe
+entity_id: switch.globe
