@@ -12,7 +12,6 @@ config/deps
 
 # Ignore specific files
 config/.homekit.state
-config/.ios.conf
 config/.uuid
 config/ip_bans.yaml
 config/known_devices.yaml
