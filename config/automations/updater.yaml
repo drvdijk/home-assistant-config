@@ -1,6 +1,7 @@
 ---
 # Example configuration.yaml entry
 alias: Update Available Notification
+hide_entity: true
 trigger:
   - platform: state
     entity_id: binary_sensor.updater
