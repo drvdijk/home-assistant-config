@@ -1,0 +1,78 @@
+# alias: New Automation
+# description: ''
+# trigger:
+# - device_id: 6777b6bcd77f46228258711b57563f5f
+#   domain: light
+#   entity_id: light.keuken_level
+#   platform: device
+#   type: turned_off
+# - device_id: e8de2dbee91f47d9804af6717227bb0b
+#   domain: light
+#   entity_id: light.eettafel_level
+#   platform: device
+#   type: turned_off
+# - device_id: 1aa35ae8cd094314b962a075e3aef142
+#   domain: light
+#   entity_id: light.huiskamer_level
+#   platform: device
+#   type: turned_off
+# - device_id: a550a4f36b324ed0ad333f8133c61c18
+#   domain: light
+#   entity_id: light.rood_ei
+#   platform: device
+#   type: turned_off
+# - device_id: 6939ff4cab274aaf88c0041070c7f103
+#   domain: light
+#   entity_id: light.leeslamp
+#   platform: device
+#   type: turned_off
+# - device_id: 54abe063c5b8426e9e2c1c6cce55ad6e
+#   domain: switch
+#   entity_id: switch.kerstverlichting
+#   platform: device
+#   type: turned_off
+# condition:
+# - condition: and
+#   conditions:
+#   - condition: device
+#     device_id: b58150812dd44761972856ae428e93f9
+#     domain: light
+#     entity_id: light.olielamp
+#     type: is_on
+#   - condition: device
+#     device_id: 6777b6bcd77f46228258711b57563f5f
+#     domain: light
+#     entity_id: light.keuken_level
+#     type: is_off
+#   - condition: device
+#     device_id: e8de2dbee91f47d9804af6717227bb0b
+#     domain: light
+#     entity_id: light.eettafel_level
+#     type: is_off
+#   - condition: device
+#     device_id: 1aa35ae8cd094314b962a075e3aef142
+#     domain: light
+#     entity_id: light.huiskamer_level
+#     type: is_off
+#   - condition: device
+#     device_id: a550a4f36b324ed0ad333f8133c61c18
+#     domain: light
+#     entity_id: light.rood_ei
+#     type: is_off
+#   - condition: device
+#     device_id: 6939ff4cab274aaf88c0041070c7f103
+#     domain: light
+#     entity_id: light.leeslamp
+#     type: is_off
+#   - condition: device
+#     device_id: 54abe063c5b8426e9e2c1c6cce55ad6e
+#     domain: switch
+#     entity_id: switch.kerstverlichting
+#     type: is_off
+# action:
+# - alias: ''
+#   data:
+#     brightness: 1
+#     transition: 5
+#   entity_id: light.olielamp
+#   service: light.turn_on
