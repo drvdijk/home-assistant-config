@@ -1,7 +1,6 @@
 ---
 # Starts Homekit after zwave has started
 alias: Start HomeKit
-hide_entity: true
 trigger:
 - platform: event
   event_type: zwave.network_ready

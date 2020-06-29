@@ -10,6 +10,10 @@ influxdb:
   database: !secret influxdb_database
   include:
     entities:
+      - sensor.energy_consumption_tarif_1
+      - sensor.energy_consumption_tarif_2
+      - sensor.energy_production_tarif_1
+      - sensor.energy_production_tarif_2
       - sensor.gas_consumption
       - sensor.hourly_gas_consumption
       - sensor.power_production
