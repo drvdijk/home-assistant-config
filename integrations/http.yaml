@@ -5,12 +5,6 @@
 # https://www.home-assistant.io/components/http/
 #
 http:
-  # Contains the URL that Home Assistant is available on the internet.
-  base_url: !secret http_base_url
-
-  # A list of origin domain names to allow CORS requests from.
-  # cors_allowed_origins: !secret http_cors_allowed_origins
-
   # List of trusted networks, consisting of IP addresses or networks,
   # that are allowed to bypass password protection when accessing
   # Home Assistant.

@@ -29,5 +29,8 @@ homeassistant:
   # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
   time_zone: Europe/Amsterdam
 
+  external_url: !secret http_external_url
+  internal_url: !secret http_internal_url
+
   # Packages
   packages: !include_dir_named integrations
