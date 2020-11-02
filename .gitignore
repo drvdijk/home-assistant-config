@@ -6,17 +6,17 @@
 *.pyc
 
 # Ignoring directories
-config/.cloud
-config/.storage
-config/deps
+.cloud
+.storage
+deps
 
 # Ignore specific files
-config/.homekit.state
-config/.uuid
-config/ip_bans.yaml
-config/known_devices.yaml
-config/options.xml
-config/zwcfg_*xml
-config/OZW_Log.txt
-config/pyozw.sqlite
-config/secrets.yaml
+.homekit.state
+.uuid
+ip_bans.yaml
+known_devices.yaml
+options.xml
+zwcfg_*xml
+OZW_Log.txt
+pyozw.sqlite
+secrets.yaml

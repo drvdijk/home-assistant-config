@@ -1,5 +1,0 @@
----
-# Convert a zwave switch into a light
-platform: switch
-name: Kerstverlichting
-entity_id: switch.kerstverlichting
