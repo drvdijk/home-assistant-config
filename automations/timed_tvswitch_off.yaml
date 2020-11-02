@@ -1,10 +1,10 @@
 ---
 # Turn TV switch off at night
-alias: Turn TV switch off at night
-trigger:
-- platform: time
-  at: '00:30:00'
-action:
-- data:
-    entity_id: switch.tv_stopcontact
-  service: switch.turn_off
+# alias: Turn TV switch off at night
+# trigger:
+# - platform: time
+#   at: '00:30:00'
+# action:
+# - data:
+#     entity_id: switch.tv_stopcontact
+#   service: switch.turn_off
