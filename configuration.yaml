@@ -10,7 +10,7 @@
 homeassistant:
 
   # Name of this Home Assistant
-  name: spiegell
+  name: Spiegell
 
   # MFA setup, using TOTP
   auth_mfa_modules:
