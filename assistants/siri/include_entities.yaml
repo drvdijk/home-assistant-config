@@ -9,6 +9,6 @@ include_entities:
   - light.huiskamer_level
   - light.slaapkamer_level
   - light.kinderkamer_level
-  - light.Hal
-  - light.Overloop
-  - switch.overloop_switch_2
+  # - light.Hal
+  # - light.Overloop
+  # - switch.overloop_switch_2

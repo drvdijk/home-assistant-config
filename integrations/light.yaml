@@ -1,6 +1,6 @@
 ---
 # The light component allows for tracking and controlling various light bulbs.
 #
-# https://www.home-assistant.io/components/light/
+# https://www.home-assistant.io/integrations/light/
 #
-# light: !include_dir_list ../entities/lights
+light: !include_dir_list ../entities/lights
