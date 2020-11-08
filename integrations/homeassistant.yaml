@@ -8,5 +8,6 @@ homeassistant:
   # Individual entities
   customize: !include_dir_merge_named ../customizations/entities
 
-  # Pattern based
-  customize_glob: !include_dir_merge_named ../customizations/globs
+  # # Pattern based
+  # # Disabled as I used it to only hide stuff, which doesn't apply in the Lovelace UI anymore (friendly names / icons do work, hiding doesn't)
+  # customize_glob: !include_dir_merge_named ../customizations/globs

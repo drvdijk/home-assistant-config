@@ -1,8 +1,4 @@
 ---
+# This integration is configured in the integrations page in the config panel.
 #
-# Hue componend, not added as integration as it doesn't allow me to hide the default groups
-#
-# hue:
-#     bridges:
-#       - host: !secret hue_host
-#         allow_hue_groups: false
+# https://www.home-assistant.io/integrations/hue

@@ -1,7 +1,7 @@
 ---
-#
 # Notifications
 #
+# https://www.home-assistant.io/integrations/notify
 notify:
   - name: slack
     platform: slack

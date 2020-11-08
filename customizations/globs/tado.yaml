@@ -1,15 +1,15 @@
----
-# Remove some tado sensor types
-#
-# https://www.home-assistant.io/docs/configuration/customizing-devices/
-# https://www.home-assistant.io/components/tado
-"*tado_link":
-  hidden: true
-"*tado_power":
-  hidden: true
-"*tado_heating":
-  hidden: true
-"*tado_tado_mode":
-  hidden: true
-"*tado_overlay":
-  hidden: true
+# ---
+# # Remove some tado sensor types
+# #
+# # https://www.home-assistant.io/docs/configuration/customizing-devices/
+# # https://www.home-assistant.io/components/tado
+# "*tado_link":
+#   hidden: true
+# "*tado_power":
+#   hidden: true
+# "*tado_heating":
+#   hidden: true
+# "*tado_tado_mode":
+#   hidden: true
+# "*tado_overlay":
+#   hidden: true

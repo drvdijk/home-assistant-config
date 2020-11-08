@@ -2,35 +2,37 @@
 # Z-Wave component. Drives a z-wave.me UZB stick: https://z-wave.me/uzb/
 #
 # https://www.home-assistant.io/docs/z-wave/installation
-# zwave:
-#   usb_path: /dev/ttyACM0
-#   network_key: !secret zwave_network_key
+zwave:
+  usb_path: /dev/ttyACM0
 
-#   device_config_glob:
-#     # Ignoring alarm types and levels, except for entities with the name "rook" in it
-#     "*_alarm_type":
-#       ignored: true
-#     "*_alarm_level":
-#       ignored: true
-#     "*_rook_alarm_type":
-#       ignored: false
-#     "*_rook_alarm_level":
-#       ignored: false
+  device_config_glob:
+    # Ignoring alarm types and levels, except for entities with the name "rook" in it
+    "*_alarm_type":
+      ignored: true
+    "*_alarm_level":
+      ignored: true
+    "*_rook_alarm_type":
+      ignored: false
+    "*_rook_alarm_level":
+      ignored: false
 
-#     # Ignoring several entities that don't seem relevant to me
-#     "*_exporting":
-#       ignored: true
-#     "*_heat":
-#       ignored: true
-#     "*_power_management":
-#       ignored: true
-#     "*_sourcenodeid":
-#       ignored: true
-#     "*_system":
-#       ignored: true
+    # Ignoring several entities that don't seem relevant to me
+    "*_exporting":
+      ignored: true
+    "*_heat":
+      ignored: true
+    "*_power_management":
+      ignored: true
+    "*_sourcenodeid":
+      ignored: true
+    "*_system":
+      ignored: true
 
-#     # Ignoring the second sets of controls and sensors that I don't use
-#     "*_2":
-#       ignored: true
-#     "zwave.*":
-#       ignored: false
+    # Ignoring the second sets of controls and sensors that I don't use
+    # Unfortunately the _2 does not work, as the entity id is determined incorrectly/inconsistently in the zwave integration
+    "*_2":
+      ignored: true
+
+    # Not ignoring the zwave stick itself
+    "zwave.*":
+      ignored: false

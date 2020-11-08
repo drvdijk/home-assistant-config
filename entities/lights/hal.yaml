@@ -1,5 +1,5 @@
 ---
 # Convert a zwave switch into a light
-# platform: switch
-# name: Hal
-# entity_id: switch.hal_switch
+platform: switch
+name: Hal
+entity_id: switch.hal_switch

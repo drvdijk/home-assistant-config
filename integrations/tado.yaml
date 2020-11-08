@@ -1,7 +1,4 @@
 ---
-# Tado component for smart thermostats
+# This integration is configured in the integrations page in the config panel.
 #
-# https://www.home-assistant.io/components/tado/
-# tado:
-#   username: !secret tado_username
-#   password: !secret tado_password
+# https://www.home-assistant.io/integrations/tado
