@@ -4,15 +4,14 @@
 # https://www.home-assistant.io/integrations/homekit#include_entities
 #
 include_entities:
-  - light.keuken_level
-  - light.eettafel_level
-  - light.huiskamer_level
-  - light.slaapkamer_level
-  - light.kinderkamer_level
-  - light.studeerkamer_level
-  - light.pieterkamer_level
-  - light.zolder_level
-  - light.Hal
-  - light.Overloop
+  # - light.keuken_level
+  # - light.eettafel_level
+  # - light.huiskamer_level
+  # - light.slaapkamer_level
+  # - light.kinderkamer_level
+  # - light.studeerkamer_level
+  # - light.pieterkamer_level
+  # - light.zolder_level
+  # - light.Hal
+  # - light.Overloop
   - light.olielamp
-  

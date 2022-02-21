@@ -2,6 +2,6 @@
 # Dutch Smart Meter Reader integration. Reads power and gas statistics
 #
 # https://www.home-assistant.io/integrations/dsmr
-platform: dsmr
-port: /dev/ttyUSB0
-dsmr_version: 5
+# platform: dsmr
+# port: /dev/ttyUSB0
+# dsmr_version: 5
