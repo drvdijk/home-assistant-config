@@ -14,3 +14,5 @@ include_entities:
   - light.zolder_level
   - light.Hal
   - light.Overloop
+  - light.olielamp
+  

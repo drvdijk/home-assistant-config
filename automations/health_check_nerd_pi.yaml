@@ -1,0 +1,12 @@
+---
+# Calls health check endpoint every other minute
+alias: Health check nerd pi
+description: ''
+mode: single
+trigger:
+  - platform: time_pattern
+    minutes: /2
+condition: []
+action:
+  - service: rest_command.nerd_pi_health
+    data: {}
