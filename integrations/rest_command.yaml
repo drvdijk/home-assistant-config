@@ -1,7 +1,7 @@
----
-# Restful urls
-#
-# https://www.home-assistant.io/integrations/rest_command/
-rest_command:
-  nerd_pi_health:
-    url: !secret nerd_pi_health_url
+# ---
+# # Restful urls
+# #
+# # https://www.home-assistant.io/integrations/rest_command/
+# rest_command:
+#   nerd_pi_health:
+#     url: !secret nerd_pi_health_url
