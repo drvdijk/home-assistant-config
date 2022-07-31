@@ -1,5 +1,6 @@
 # Ignoring file types
 *.log
+*.log.*
 *.db
 *.db-shm
 *.db-wal
@@ -11,12 +12,8 @@
 deps
 
 # Ignore specific files
-.homekit.state
-.uuid
 ip_bans.yaml
-known_devices.yaml
-options.xml
-zwcfg_*xml
-OZW_Log.txt
-pyozw.sqlite
 secrets.yaml
+
+# Keep
+!.gitkeep
