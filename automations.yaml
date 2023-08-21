@@ -47,7 +47,7 @@
     to: 'on'
   condition: []
   action:
-  - service: notify.drvd
+  - service: notify.notifications_group
     data:
       message: Te vochtig in huis
   mode: single
