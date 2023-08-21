@@ -14,4 +14,4 @@ include_entities:
   - light.zolder
   - light.Hal
   - light.Overloop
-  - light.olielamp
+  - light.toms_nachtlamp

@@ -4,15 +4,15 @@
 #
 # https://www.home-assistant.io/integrations/homekit
 #
-# homekit:
-#   # Stop the HomeKit Server from starting automatically after the Home Assistant
-#   # Core Setup is done (zwave needs to start first).
-#   auto_start: false
+homekit:
+ # Stop the HomeKit Server from starting automatically after the Home Assistant
+ # Core Setup is done (zwave needs to start first).
+ auto_start: false
 
-#   name: Spiegell
+ name: Spiegell
 
-#   # Filter for entities to be included / excluded from HomeKit.
-#   filter: !include ../assistants/siri/include_entities.yaml
+ # Filter for entities to be included / excluded from HomeKit.
+ filter: !include ../assistants/siri/include_entities.yaml
 
-#   # Configuration for specific entities. Allows customization of names and types
-#   entity_config: !include_dir_merge_named ../assistants/siri/entity_configs
+ # Configuration for specific entities. Allows customization of names and types
+ entity_config: !include_dir_merge_named ../assistants/siri/entity_configs

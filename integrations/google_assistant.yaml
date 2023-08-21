@@ -1,0 +1,10 @@
+---
+#
+# https://www.home-assistant.io/integrations/google_assistant
+#
+google_assistant:
+  project_id: !secret google_project_id
+  expose_by_default: false
+  service_account: !secret google_service_account
+  report_state: true
+  entity_config: !include ../assistants/google_assistant/entity_configs.yaml

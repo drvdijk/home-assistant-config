@@ -1,0 +1,21 @@
+---
+light.keuken:
+  expose: true
+light.eettafel:
+  expose: true
+light.huiskamer:
+  expose: true
+light.slaapkamer:
+  expose: true
+light.kinderkamer:
+  expose: true
+light.studeerkamer:
+  expose: true
+light.pieterkamer:
+  expose: true
+light.zolder:
+  expose: true
+light.Hal:
+  expose: true
+light.Overloop:
+  expose: true

@@ -1,5 +1,5 @@
 - id: '1646642370951'
-  alias: Zolder uit na zonsopgang
+  alias: Lichten uit na zonsopgang
   description: ''
   trigger:
   - platform: sun
@@ -8,7 +8,84 @@
   condition: []
   action:
   - type: turn_off
-    device_id: 85a76f41b8be7d8a35ba5c1294f894dd
+    device_id: 5dc20e0839dd3610bc8e8c57bfcb4d8f
     entity_id: light.zolder
+    domain: light
+  - type: turn_off
+    device_id: 8ba499081f279fd844a9d2b2d12c2508
+    entity_id: light.toms_nachtlamp
+    domain: light
+    enabled: false
+  mode: single
+- id: '1668245502479'
+  alias: Lichten aan voor zonsondergang
+  description: ''
+  trigger:
+  - platform: sun
+    event: sunset
+    offset: -00:30:00
+  condition: []
+  action:
+  - type: turn_on
+    device_id: 5dc20e0839dd3610bc8e8c57bfcb4d8f
+    entity_id: light.zolder
+    domain: light
+  - type: turn_on
+    device_id: 8ba499081f279fd844a9d2b2d12c2508
+    entity_id: light.toms_nachtlamp
+    domain: light
+    enabled: false
+  mode: single
+- id: '1668641980481'
+  alias: Vochtigheid
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - binary_sensor.te_vochtig
+    from: 'off'
+    to: 'on'
+  condition: []
+  action:
+  - service: notify.drvd
+    data:
+      message: Te vochtig in huis
+  mode: single
+- id: '1673214357747'
+  alias: TV uit
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - media_player.lijstje
+    to: 'off'
+  condition: []
+  action:
+  - type: turn_off
+    device_id: ea4713e04251beb893fd596a20e217b7
+    entity_id: light.hue_smart_plug_1_3
+    domain: light
+  - type: turn_off
+    device_id: c28e66fcb13aebc6cc25eb5e47580e8d
+    entity_id: light.hue_smart_plug_1_4
+    domain: light
+  mode: single
+- id: '1673214524889'
+  alias: TV aan
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - media_player.lijstje
+    from: 'off'
+  condition: []
+  action:
+  - type: turn_on
+    device_id: ea4713e04251beb893fd596a20e217b7
+    entity_id: light.hue_smart_plug_1_3
+    domain: light
+  - type: turn_on
+    device_id: c28e66fcb13aebc6cc25eb5e47580e8d
+    entity_id: light.hue_smart_plug_1_4
     domain: light
   mode: single

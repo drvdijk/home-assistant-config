@@ -3,6 +3,7 @@
 #
 # https://www.home-assistant.io/integrations/notify
 # notify:
+# This integration is configured in the integrations page in the config panel.
 #   - name: slack
 #     platform: slack
 #     api_key: !secret slack_api_key
